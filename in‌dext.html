@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMS Hardware and Concrete Works | Premium Building Materials</title>
+  
+  <!-- Google Fonts: Inter & Outfit for strong modern industrial typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- AOS (Animate On Scroll) Library CDN -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              amber: '#f59e0b',
+              orange: '#ea580c',
+              dark: '#0f172a',
+              concrete: '#475569',
+              steel: '#334155',
+              surface: '#1e293b'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ea580c;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #f59e0b;
+    }
+
+    /* Industrial Mesh Pattern */
+    .bg-grid-pattern {
+      background-image: radial-gradient(rgba(245, 158, 11, 0.15) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+
+    /* Glow Effect */
+    .amber-glow {
+      box-shadow: 0 0 25px -5px rgba(234, 88, 12, 0.4);
+    }
+    
+    .card-hover-effect {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card-hover-effect:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-amber-500 selection:text-black">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-gradient-to-r from-amber-600 via-orange-600 to-amber-600 text-slate-950 font-semibold text-xs md:text-sm py-2 px-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-4 text-center sm:text-left">
+        <span><i class="fa-solid fa-truck-pickup mr-1"></i> ඔබගේ ඉදිකිරීම් භූමියටම කඩිනම් ටිපර් සහ ලොරි ප්‍රවාහනය (Fast Site Delivery)</span>
+        <span class="hidden md:inline bg-black/20 text-slate-900 px-2 py-0.5 rounded-full text-xs">Direct Factory Prices</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="tel:+94771234567" class="hover:underline flex items-center gap-1 font-bold">
+          <i class="fa-solid fa-phone"></i> +94 77 123 4567
+        </a>
+        <span class="text-black/40">|</span>
+        <a href="#location" class="hover:underline flex items-center gap-1">
+          <i class="fa-solid fa-location-dot"></i> Open Daily 6:30 AM - 8:00 PM
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-slate-950 font-black text-2xl shadow-lg shadow-amber-500/20 group-hover:scale-105 transition-transform">
+          <i class="fa-solid fa-trowel-bricks"></i>
+        </div>
+        <div>
+          <div class="font-display font-black text-xl sm:text-2xl tracking-tight text-white flex items-center gap-1">
+            GMS <span class="text-amber-500 font-extrabold text-sm sm:text-base tracking-widest px-1.5 py-0.5 bg-amber-500/10 border border-amber-500/30 rounded">HARDWARE</span>
+          </div>
+          <p class="text-[11px] sm:text-xs text-slate-400 font-medium tracking-wider uppercase">Concrete Works & Building Supplies</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a href="#home" class="text-sm font-semibold text-slate-200 hover:text-amber-400 transition-colors">Home</a>
+        <a href="#products" class="text-sm font-semibold text-slate-200 hover:text-amber-400 transition-colors">ද්‍රව්‍ය & Products</a>
+        <a href="#concrete" class="text-sm font-semibold text-slate-200 hover:text-amber-400 transition-colors">කොන්ක්‍රීට් ගල් (Blocks)</a>
+        <a href="#calculator" class="text-sm font-semibold text-slate-200 hover:text-amber-400 transition-colors flex items-center gap-1.5 text-amber-400">
+          <i class="fa-solid fa-calculator"></i> Block Calculator
+        </a>
+        <a href="#why-us" class="text-sm font-semibold text-slate-200 hover:text-amber-400 transition-colors">ඇයි අප?</a>
+        <a href="#contact" class="text-sm font-semibold text-slate-200 hover:text-amber-400 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <button onclick="openQuoteModal()" class="px-4 py-2.5 rounded-lg border border-amber-500/40 text-amber-400 font-medium text-sm hover:bg-amber-500/10 transition flex items-center gap-2">
+          <i class="fa-solid fa-file-invoice-dollar"></i> Get Quote
+        </button>
+        <a href="https://wa.me/94771234567?text=Hello%20GMS%20Hardware,%20I%20would%20like%20to%20inquire%20about%20materials" target="_blank" class="px-4 py-2.5 rounded-lg bg-gradient-to-r from-emerald-600 to-green-500 text-white font-semibold text-sm hover:brightness-110 shadow-lg shadow-green-600/20 transition flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Order
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobileMenuBtn" class="lg:hidden p-2.5 rounded-lg bg-slate-800 text-slate-200 hover:text-amber-400">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobileDrawer" class="hidden lg:hidden bg-slate-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3">
+      <a href="#home" class="block px-3 py-2 rounded-md font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">මුල් පිටුව (Home)</a>
+      <a href="#products" class="block px-3 py-2 rounded-md font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">ද්‍රව්‍ය ලැයිස්තුව (Materials)</a>
+      <a href="#concrete" class="block px-3 py-2 rounded-md font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">කොන්ක්‍රීට් ගල් නිෂ්පාදන</a>
+      <a href="#calculator" class="block px-3 py-2 rounded-md font-medium text-amber-400 hover:bg-slate-800">ගල් අවශ්‍යතාව ගණනය (Calculator)</a>
+      <a href="#why-us" class="block px-3 py-2 rounded-md font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">විශේෂතා (Why Us)</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md font-medium text-slate-200 hover:bg-slate-800 hover:text-amber-400">සම්බන්ධ කරගන්න (Contact)</a>
+      <div class="pt-3 flex flex-col gap-2">
+        <button onclick="openQuoteModal()" class="w-full py-2.5 rounded-lg border border-amber-500/40 text-amber-400 text-sm font-semibold">මිල විමසීම (Get Quote)</button>
+        <a href="https://wa.me/94771234567" class="w-full py-2.5 rounded-lg bg-green-600 text-white text-center text-sm font-semibold flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp සම්බන්ධ වන්න
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-[90vh] flex items-center justify-center bg-slate-950 bg-grid-pattern pt-8 pb-16 overflow-hidden">
+    <!-- Atmospheric Ambient Glows -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-96 h-96 bg-orange-600/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left" data-aos="fade-right">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-amber-500/30 text-amber-400 text-xs sm:text-sm font-semibold shadow-inner">
+            <span class="flex h-2 w-2 rounded-full bg-amber-400 animate-ping"></span>
+            විශ්වසනීය ඉදිකිරීම් සහ කොන්ක්‍රීට් නිෂ්පාදන
+          </div>
+
+          <h1 class="font-display font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.15]">
+            ඔබේ නිවසට හා ඉදිකිරීමට ශක්තිමත් පදනමක් <br>
+            <span class="bg-gradient-to-r from-amber-400 via-orange-400 to-amber-200 bg-clip-text text-transparent">GMS Hardware & Concrete Works</span>
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+            උසස්ම තත්ත්වයේ <strong>කොන්ක්‍රීට් බ්ලොක් ගල් (Solid & Hollow Blocks)</strong>, සිමෙන්ති, කළුගල් (Metal), ගඟ වැලි, TMT යකඩ සහ සියලුම වර්ගයේ Hardware උපකරණ සාධාරණ මිලට ඔබේ භූමියටම ප්‍රවාහනය කරනු ලැබේ.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#products" class="px-7 py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-bold hover:brightness-110 shadow-lg shadow-amber-500/25 transition flex items-center gap-2 transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-boxes-stacked"></i> සියලු භාණ්ඩ බලන්න
+            </a>
+            <a href="#calculator" class="px-7 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-bold hover:border-amber-500/50 hover:bg-slate-800 transition flex items-center gap-2">
+              <i class="fa-solid fa-calculator text-amber-400"></i> Block ගණනය කරන්න
+            </a>
+          </div>
+
+          <!-- Highlight Badges -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-slate-800/80 max-w-xl mx-auto lg:mx-0">
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 text-center">
+              <div class="text-amber-400 font-extrabold text-xl sm:text-2xl font-display">100%</div>
+              <div class="text-[11px] sm:text-xs text-slate-400 font-medium">Cured Concrete Blocks</div>
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 text-center">
+              <div class="text-amber-400 font-extrabold text-xl sm:text-2xl font-display">Tipper</div>
+              <div class="text-[11px] sm:text-xs text-slate-400 font-medium">කඩිනම් ප්‍රවාහනය</div>
+            </div>
+            <div class="bg-slate-900/60 p-3 rounded-xl border border-slate-800 text-center">
+              <div class="text-amber-400 font-extrabold text-xl sm:text-2xl font-display">Lowest</div>
+              <div class="text-[11px] sm:text-xs text-slate-400 font-medium">තොග සහ සිල්ලර මිල</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="lg:col-span-5 relative" data-aos="fade-left">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Concrete Blocks Main Graphic Card -->
+            <div class="relative bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-6 border border-slate-700/80 shadow-2xl overflow-hidden card-hover-effect">
+              <div class="flex items-center justify-between pb-4 border-b border-slate-700/60">
+                <div class="flex items-center gap-2">
+                  <span class="w-3 h-3 rounded-full bg-red-500"></span>
+                  <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                  <span class="w-3 h-3 rounded-full bg-green-500"></span>
+                </div>
+                <span class="text-xs font-semibold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/30">
+                  Direct Works Production
+                </span>
+              </div>
+
+              <!-- Product Graphic Simulation -->
+              <div class="py-6 space-y-4">
+                <div class="h-44 w-full bg-slate-950 rounded-2xl relative overflow-hidden flex items-center justify-center p-4 border border-slate-800 group">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent z-10"></div>
+                  <!-- SVG representation of concrete industrial blocks & aggregates -->
+                  <svg class="w-full h-full max-h-36 object-contain z-0 text-slate-600 transition transform group-hover:scale-105 duration-500" viewBox="0 0 240 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Concrete Solid Block 1 -->
+                    <rect x="20" y="45" width="85" height="45" rx="3" fill="#64748b" stroke="#94a3b8" stroke-width="2"/>
+                    <rect x="35" y="55" width="22" height="25" rx="2" fill="#334155"/>
+                    <rect x="68" y="55" width="22" height="25" rx="2" fill="#334155"/>
+                    <!-- Concrete Solid Block 2 (Stacked) -->
+                    <rect x="70" y="15" width="85" height="45" rx="3" fill="#475569" stroke="#cbd5e1" stroke-width="2"/>
+                    <rect x="85" y="25" width="22" height="25" rx="2" fill="#1e293b"/>
+                    <rect x="118" y="25" width="22" height="25" rx="2" fill="#1e293b"/>
+                    <!-- Sand / Metal Mound -->
+                    <path d="M140 100 Q180 35 220 100 Z" fill="#b45309" opacity="0.8"/>
+                    <path d="M125 100 Q155 55 185 100 Z" fill="#78716c" opacity="0.9"/>
+                  </svg>
+                  <div class="absolute bottom-3 left-4 z-20">
+                    <span class="text-xs font-semibold text-slate-400">Featured Production</span>
+                    <h3 class="text-lg font-bold text-white">4" & 6" Heavy Solid Blocks</h3>
+                  </div>
+                </div>
+
+                <!-- Live Price Status Strip -->
+                <div class="space-y-2.5">
+                  <div class="flex items-center justify-between p-3 rounded-xl bg-slate-950/70 border border-slate-800">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-xs">
+                        <i class="fa-solid fa-cubes"></i>
+                      </div>
+                      <div>
+                        <div class="text-xs font-bold text-slate-200">Solid Concrete Blocks</div>
+                        <div class="text-[10px] text-slate-400">Steam / Water Cured Daily</div>
+                      </div>
+                    </div>
+                    <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2 py-1 rounded">In Stock</span>
+                  </div>
+
+                  <div class="flex items-center justify-between p-3 rounded-xl bg-slate-950/70 border border-slate-800">
+                    <div class="flex items-center gap-3">
+                      <div class="w-8 h-8 rounded-lg bg-orange-500/20 text-orange-400 flex items-center justify-center font-bold text-xs">
+                        <i class="fa-solid fa-mountain"></i>
+                      </div>
+                      <div>
+                        <div class="text-xs font-bold text-slate-200">River Sand & Metal (3/4, ABC)</div>
+                        <div class="text-[10px] text-slate-400">Tipper Loads (1, 2, 3 Cubes)</div>
+                      </div>
+                    </div>
+                    <span class="text-xs font-bold text-amber-400 bg-amber-500/10 px-2 py-1 rounded">Ready to Ship</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-3 border-t border-slate-700/60 flex items-center justify-between">
+                <span class="text-xs text-slate-400"><i class="fa-solid fa-shield-halved text-amber-400 mr-1"></i> SLS Certified Cements</span>
+                <span class="text-xs font-bold text-amber-400">GMS Quality Assured</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Products & Materials Catalog Section -->
+  <section id="products" class="py-20 bg-slate-900 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-12" data-aos="fade-up">
+        <span class="text-amber-400 text-xs sm:text-sm font-bold uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+          Our Full Inventory
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-3">
+          ඉදිකිරීම් ද්‍රව්‍ය සහ Hardware භාණ්ඩ
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          අත්තිවාරමේ සිට වහලය දක්වා ඔබට අවශ්‍ය සියලුම කොන්ක්‍රීට් සහ ඉදිකිරීම් අමුද්‍රව්‍ය එකම තැනකින් ලබාගන්න.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10" data-aos="fade-up">
+        <button onclick="filterProducts('all')" class="category-btn active-filter px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-amber-500 text-slate-950 shadow-md">
+          සියල්ල (All Items)
+        </button>
+        <button onclick="filterProducts('concrete')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+          <i class="fa-solid fa-cubes mr-1 text-amber-400"></i> කොන්ක්‍රීට් ගල් (Blocks)
+        </button>
+        <button onclick="filterProducts('aggregates')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+          <i class="fa-solid fa-mountain mr-1 text-orange-400"></i> වැලි & කළුගල් (Sand/Metal)
+        </button>
+        <button onclick="filterProducts('cement-steel')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+          <i class="fa-solid fa-layer-group mr-1 text-blue-400"></i> සිමෙන්ති & යකඩ (Steel)
+        </button>
+        <button onclick="filterProducts('hardware')" class="category-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700">
+          <i class="fa-solid fa-screwdriver-wrench mr-1 text-emerald-400"></i> Tools & Hardware
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        
+        <!-- Product 1: Solid Concrete Block 4 inch -->
+        <div class="product-item" data-category="concrete">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-cube text-slate-600 text-6xl group-hover:scale-110 transition"></i>
+                <span class="absolute top-2.5 left-2.5 bg-amber-500 text-slate-950 text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Best Seller</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">4" Solid</span>
+              </div>
+              <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wide">කොන්ක්‍රීට් නිෂ්පාදන</span>
+              <h3 class="text-base font-bold text-white mt-1">4 Inch Solid Concrete Block</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                ශක්තිමත් බිත්ති සහ පාදම් සඳහා නියමිත මිශ්‍රණයෙන් නිපදවා පදම් කරන ලද (Well Cured) කොන්ක්‍රීට් ගල්.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Unit Price (ඇස්තමේන්තු)</span>
+                  <span class="text-base font-extrabold text-amber-400">Rs. 85.00</span>
+                </div>
+                <button onclick="quickOrder('4 Inch Solid Concrete Block')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Solid Concrete Block 6 inch -->
+        <div class="product-item" data-category="concrete">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-cubes-stacked text-slate-600 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-blue-500 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Heavy Load</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">6" Solid</span>
+              </div>
+              <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wide">කොන්ක්‍රීට් නිෂ්පාදන</span>
+              <h3 class="text-base font-bold text-white mt-1">6 Inch Heavy Solid Block</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                ආරක්ෂිත තාප්ප, බර දරන බිත්ති සහ වාණිජ ඉදිකිරීම් සඳහා විශේෂයෙන් නිපදවන ගල්.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Unit Price (ඇස්තමේන්තු)</span>
+                  <span class="text-base font-extrabold text-amber-400">Rs. 135.00</span>
+                </div>
+                <button onclick="quickOrder('6 Inch Heavy Solid Block')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: River Sand (ගඟ වැලි) -->
+        <div class="product-item" data-category="aggregates">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-mound text-amber-700/70 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-amber-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Washed Pure</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">River Sand</span>
+              </div>
+              <span class="text-[11px] font-bold text-orange-400 uppercase tracking-wide">වැලි සහ බොරළු</span>
+              <h3 class="text-base font-bold text-white mt-1">පිරිසිදු ගඟ වැලි (River Sand)</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                ප්ලාස්ටර් (බදාම) සහ කොන්ක්‍රීට් වැඩ සඳහා රොන්මඩ රහිත උසස්ම තත්ත්වයේ ගඟ වැලි.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Tipper Delivery</span>
+                  <span class="text-base font-extrabold text-amber-400">1 Cube / 2 Cubes</span>
+                </div>
+                <button onclick="quickOrder('River Sand Tipper Load')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: 3/4 Metal (කළුගල්) -->
+        <div class="product-item" data-category="aggregates">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-gem text-slate-500 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-emerald-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Quarry Fresh</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">3/4" Metal</span>
+              </div>
+              <span class="text-[11px] font-bold text-orange-400 uppercase tracking-wide">කළුගල් සහ බොරළු</span>
+              <h3 class="text-base font-bold text-white mt-1">3/4 කළුගල් (Metal) & ABC</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                ස්ලැබ් දැමීමට සහ කොන්ක්‍රීට් කණු සඳහා නියමිත ප්‍රමාණයේ බ්ලූ මෙටල් (3/4 & 1/2) කළුගල්.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Supply Type</span>
+                  <span class="text-base font-extrabold text-amber-400">Cube / Lorries</span>
+                </div>
+                <button onclick="quickOrder('3/4 Metal Aggregate')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Premium Cement Bags (Tokyo Super / Sanstha) -->
+        <div class="product-item" data-category="cement-steel">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-bag-shopping text-emerald-500 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-red-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Certified SLS</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">50 KG Bags</span>
+              </div>
+              <span class="text-[11px] font-bold text-blue-400 uppercase tracking-wide">සිමෙන්ති වර්ග</span>
+              <h3 class="text-base font-bold text-white mt-1">Tokyo Super / INSEE සංස්ථා</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                ඉහළම ශක්තියක් සහිත ප්‍රමුඛ පෙළේ සිමෙන්ති වර්ග. තොග ඇණවුම් සඳහා විශේෂ වට්ටම්.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Market Best Rates</span>
+                  <span class="text-base font-extrabold text-amber-400">Rs. 1,850+</span>
+                </div>
+                <button onclick="quickOrder('Tokyo / INSEE Cement')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: TMT Steel & BRC Mesh -->
+        <div class="product-item" data-category="cement-steel">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-bars-staggered text-blue-400 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-blue-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">RB 500 Steel</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">10mm / 12mm / 16mm</span>
+              </div>
+              <span class="text-[11px] font-bold text-blue-400 uppercase tracking-wide">යකඩ සහ කම්බි</span>
+              <h3 class="text-base font-bold text-white mt-1">TMT Steel Rebars & BRC Mesh</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                කොන්ක්‍රීට් ස්ලැබ් සහ බීම් සඳහා උසස් තත්ත්වයේ TMT වානේ කම්බි සහ BRC දැල්.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Available Sizes</span>
+                  <span class="text-base font-extrabold text-amber-400">10, 12, 16 mm</span>
+                </div>
+                <button onclick="quickOrder('TMT Steel Rebars')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7: PVC Pipes & Plumbing -->
+        <div class="product-item" data-category="hardware">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-faucet-drip text-cyan-400 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-cyan-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Full Range</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">S-Lon / Anton</span>
+              </div>
+              <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wide">නල සහ උපාංග</span>
+              <h3 class="text-base font-bold text-white mt-1">PVC Pipes & Plumbing Fittings</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                ජල සම්පාදනය, මල අපවහන පද්ධති සහ වහල පීලි සඳහා උසස් PVC බට සහ උපාංග.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Pipes & Accessories</span>
+                  <span class="text-base font-extrabold text-amber-400">All Sizes</span>
+                </div>
+                <button onclick="quickOrder('PVC Pipes and Fittings')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8: Construction Tools & Equipment -->
+        <div class="product-item" data-category="hardware">
+          <div class="bg-slate-950 rounded-2xl border border-slate-800 overflow-hidden card-hover-effect h-full flex flex-col justify-between">
+            <div class="p-5">
+              <div class="h-40 rounded-xl bg-slate-800/80 flex items-center justify-center relative overflow-hidden mb-4 border border-slate-700/50">
+                <i class="fa-solid fa-hammer text-orange-400 text-6xl"></i>
+                <span class="absolute top-2.5 left-2.5 bg-orange-600 text-white text-[10px] font-extrabold px-2 py-0.5 rounded uppercase">Heavy Duty</span>
+                <span class="absolute bottom-2.5 right-2.5 bg-slate-900/90 text-slate-300 text-xs px-2 py-0.5 rounded font-mono">Hand & Power</span>
+              </div>
+              <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wide">උපකරණ</span>
+              <h3 class="text-base font-bold text-white mt-1">Grinders, Drills & Masonry Tools</h3>
+              <p class="text-xs text-slate-400 mt-1.5 leading-relaxed">
+                බදාම හැඳි, වීල්බැරෝ, මට්ටම් ලණු, කටර් තල, නියන සහ සියලු ඉදිකිරීම් උපකරණ.
+              </p>
+            </div>
+            <div class="p-5 pt-0 border-t border-slate-800/80 mt-auto">
+              <div class="flex items-center justify-between py-3">
+                <div>
+                  <span class="text-[10px] text-slate-400 block">Warranty Available</span>
+                  <span class="text-base font-extrabold text-amber-400">Hardware Stock</span>
+                </div>
+                <button onclick="quickOrder('Masonry Hand and Power Tools')" class="p-2.5 rounded-lg bg-amber-500 text-slate-950 hover:bg-amber-400 font-bold transition">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Dedicated Concrete Works Showcase Section -->
+  <section id="concrete" class="py-20 bg-slate-950 relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left: Why Our Blocks Are Stronger -->
+        <div class="lg:col-span-6 space-y-6" data-aos="fade-right">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold uppercase">
+            <i class="fa-solid fa-industry"></i> GMS Concrete Works Factory
+          </div>
+          <h2 class="font-display font-black text-3xl sm:text-4xl text-white">
+            අපගේ කොන්ක්‍රීට් ගල් වල විශේෂත්වය කුමක්ද?
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            GMS කොන්ක්‍රීට් ගල් නිපදවනු ලබන්නේ නිසි තාක්ෂණික ප්‍රමිතීන්ට අනුව සකස් කල මිශ්‍රණයක් (Vibrated Compaction) සහ දින ගණනාවක් නිසි පරිදි වතුර යොදා පදම් කිරීමෙනි (Proper Water Curing). බිඳී යාම අවම අතර බදාම වැයවීම ඉතා අඩුය.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-check font-bold"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">නියමිත ප්‍රමාණය සහ නිසි දාර (Sharp Edges & Uniform Size)</h4>
+                <p class="text-xs text-slate-400 mt-0.5">බිත්ති බඳින විට මට්ටම කෙලින් තබා ගැනීමට හැකිවීමෙන් කපරාරු බදාම වියදම විශාල වශයෙන් ඉතිරි වේ.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-check font-bold"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">උසස් තත්ත්වයේ සිමෙන්ති හා ක්වොරි ඩස්ට් (High Density Mix)</h4>
+                <p class="text-xs text-slate-400 mt-0.5">ප්‍රමිතිගත සිමෙන්ති සහ නිසි මිණුමට අනුව ගල් කුඩු යොදා හයිඩ්‍රොලික් කම්පන මැෂින් මඟින් තද කර නිපදවයි.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1">
+                <i class="fa-solid fa-check font-bold"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">කඩිනම් සයිට් ඩිලිවරි (Careful Transport & Unloading)</h4>
+                <p class="text-xs text-slate-400 mt-0.5">ප්‍රවාහනයේදී ගල් කැඩීයාම වැළැක්වෙන පරිදි සේවකයන් ලවා ප්‍රවේශමෙන් බෑමේ පහසුකම.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://wa.me/94771234567?text=GMS%20Concrete%20Works%20Factory%20Order%20Inquiry" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-500 text-slate-950 font-bold hover:bg-amber-400 transition">
+              <i class="fa-solid fa-phone-volume"></i> ෆැක්ටරියෙන් සෘජුවම ඇණවුම් කරන්න
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Concrete Spec Table -->
+        <div class="lg:col-span-6" data-aos="fade-left">
+          <div class="bg-slate-900 rounded-3xl p-6 sm:p-8 border border-slate-800 shadow-xl">
+            <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-6">
+              <i class="fa-solid fa-table-list text-amber-400"></i> අප නිපදවන ප්‍රමාණ හා පිරිවිතර (Specifications)
+            </h3>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-left text-xs sm:text-sm">
+                <thead>
+                  <tr class="border-b border-slate-700/80 text-amber-400">
+                    <th class="pb-3 font-semibold">වර්ගය (Type)</th>
+                    <th class="pb-3 font-semibold">මානයන් (Size L x W x H)</th>
+                    <th class="pb-3 font-semibold">භාවිතය (Best For)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-800 text-slate-300">
+                  <tr>
+                    <td class="py-3 font-bold text-white">4" Solid Block</td>
+                    <td class="py-3 font-mono">16" x 4" x 8"</td>
+                    <td class="py-3">ගෙවල් කාමර බිත්ති, Partition Walls</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-bold text-white">6" Solid Block</td>
+                    <td class="py-3 font-mono">16" x 6" x 8"</td>
+                    <td class="py-3">වට තාප්ප (Boundary walls), Load Bearing</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-bold text-white">Hollow Block</td>
+                    <td class="py-3 font-mono">16" x 6" x 8"</td>
+                    <td class="py-3">සැහැල්ලු බිත්ති, අඩු බර අවශ්‍ය තැන්</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-bold text-white">කොන්ක්‍රීට් කණු (Fence Posts)</td>
+                    <td class="py-3 font-mono">6ft / 7ft / 8ft</td>
+                    <td class="py-3">ඉඩම් වටකිරීමට, කටුකම්බි වැටවල් සඳහා</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 font-bold text-white">කාණු මුදු (Culvert Rings)</td>
+                    <td class="py-3 font-mono">2ft / 2.5ft / 3ft</td>
+                    <td class="py-3">ළිං, වැසිකිලි වලවල් හා ජලාපවහන කාණු</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="mt-6 p-4 rounded-xl bg-slate-950/80 border border-slate-800 text-xs text-slate-400 flex items-center justify-between">
+              <span><i class="fa-solid fa-truck text-amber-400 mr-1.5"></i> ලොකු ඇණවුම් සඳහා ප්‍රවාහන ගාස්තු විශේෂ වට්ටම්</span>
+              <span class="text-amber-400 font-bold">Free Quote</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Construction Estimator (Calculator) -->
+  <section id="calculator" class="py-20 bg-slate-900 border-t border-slate-800 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+          Smart Estimator
+        </span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white mt-3">
+          ඔබේ බිත්තියට යන ගල් ගණන ගණනය කරගන්න
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">
+          ඔබේ බිත්තියේ දිග සහ උස (අඩි වලින්) ඇතුළත් කර අවශ්‍ය වන ආසන්න කොන්ක්‍රීට් ගල් ගණන සහ වියදම දැන්ම බලාගන්න.
+        </p>
+      </div>
+
+      <div class="bg-slate-950 rounded-3xl border border-slate-800 p-6 sm:p-10 shadow-2xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          
+          <!-- Inputs Column -->
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                බිත්තියේ දිග - Length (Feet / අඩි)
+              </label>
+              <div class="relative">
+                <input type="number" id="calcLength" value="50" min="1" step="1" oninput="calculateEstimate()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400 font-mono text-lg">
+                <span class="absolute right-4 top-3.5 text-xs text-slate-500 font-bold uppercase">Feet</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                බිත්තියේ උස - Height (Feet / අඩි)
+              </label>
+              <div class="relative">
+                <input type="number" id="calcHeight" value="10" min="1" step="1" oninput="calculateEstimate()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400 font-mono text-lg">
+                <span class="absolute right-4 top-3.5 text-xs text-slate-500 font-bold uppercase">Feet</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                ගල් වර්ගය තෝරන්න (Select Block Type)
+              </label>
+              <select id="calcType" onchange="calculateEstimate()" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400 text-sm">
+                <option value="4-solid" data-price="85">4" Solid Block (Rs. 85 / ගලක්)</option>
+                <option value="6-solid" data-price="135">6" Solid Block (Rs. 135 / ගලක්)</option>
+                <option value="6-hollow" data-price="110">6" Hollow Block (Rs. 110 / ගලක්)</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                අඩු කළ යුතු දොර ජනෙල් වර්ගඵලය (Deductions - Sq.Ft.)
+              </label>
+              <input type="number" id="calcDeduction" value="0" min="0" oninput="calculateEstimate()" placeholder="උදා: 40 Sq.Ft." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-amber-400 text-sm font-mono">
+              <span class="text-[11px] text-slate-500 mt-1 block">දොර සහ ජනෙල් ඇතිනම් ඒවායේ වර්ගඵලය අඩුකරන්න.</span>
+            </div>
+          </div>
+
+          <!-- Calculation Output Display -->
+          <div class="bg-gradient-to-br from-slate-900 to-slate-950 p-6 sm:p-8 rounded-2xl border border-amber-500/30 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                <span class="text-xs font-bold uppercase text-amber-400">ගණනය කළ ප්‍රතිඵලය (Estimate)</span>
+                <span class="text-xs text-slate-400"><i class="fa-solid fa-clock-rotate-left mr-1"></i> Live Update</span>
+              </div>
+
+              <div class="py-6 space-y-4">
+                <div>
+                  <span class="text-xs text-slate-400">සම්පූර්ණ බිත්ති වර්ගඵලය:</span>
+                  <div class="text-2xl font-black text-white font-display" id="resArea">500 <span class="text-sm font-normal text-slate-400">Sq.Ft (වර්ග අඩි)</span></div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30">
+                  <span class="text-xs font-bold text-amber-400">අවශ්‍ය ආසන්න ගල් ගණන (Blocks Needed):</span>
+                  <div class="text-4xl font-black text-amber-400 font-display mt-1" id="resBlocks">
+                    563 <span class="text-base font-normal text-slate-300">ගල් (Units)</span>
+                  </div>
+                  <span class="text-[11px] text-slate-400 mt-1 block">* 5% ක කැඩීම් සහ පාඩු (Wastage allowance) ඇතුළත් කර ඇත.</span>
+                </div>
+
+                <div>
+                  <span class="text-xs text-slate-400">ගල් සඳහා ඇස්තමේන්තු මුදල:</span>
+                  <div class="text-2xl font-black text-emerald-400 font-display" id="resCost">
+                    Rs. 47,855.00
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp Estimate Share -->
+            <button onclick="sendCalculatedQuote()" class="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-green-500 text-white font-bold text-sm hover:brightness-110 shadow-lg shadow-green-600/20 transition flex items-center justify-center gap-2">
+              <i class="fa-brands fa-whatsapp text-lg"></i> මෙම ඇස්තමේන්තුව WhatsApp කරන්න
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose GMS Hardware -->
+  <section id="why-us" class="py-20 bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+          Our Guarantee
+        </span>
+        <h2 class="font-display font-black text-3xl sm:text-4xl text-white mt-3">
+          ඔබේ ඉදිකිරීමට GMS Hardware තෝරාගත යුත්තේ ඇයි?
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">
+          වසර ගණනාවක විශ්වාසය සහ ඉදිකිරීම් ක්ෂේත්‍රයේ ප්‍රමුඛ පෙළේ කාර්යභාරය.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 card-hover-effect" data-aos="zoom-in" data-aos-delay="100">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">ස්ථානයටම ප්‍රවාහනය</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            ඔබේ නිවස හෝ වැඩබිම කොතැනක තිබුණත් ටිපර් සහ ලොරි මඟින් නියමිත වෙලාවට භාණ්ඩ රැගෙන ඒම.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 card-hover-effect" data-aos="zoom-in" data-aos-delay="200">
+          <div class="w-12 h-12 rounded-xl bg-orange-500/20 text-orange-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-stamp"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">තත්ත්ව සහතිකය</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            SLS ප්‍රමිතිගත සිමෙන්ති, හොඳින් පදම් වූ ගල් සහ උසස්ම තත්ත්වයේ Hardware බඩු පමණක්ම ලබා දීම.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 card-hover-effect" data-aos="zoom-in" data-aos-delay="300">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">කර්මාන්තශාලා තොග මිල</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            මැදිහත්කරුවන්ගෙන් තොරව අපගේම නිෂ්පාදනාගාරයෙන් කෙලින්ම ඔබට ලැබෙන බැවින් සාධාරණම මිල ගණන්.
+          </p>
+        </div>
+
+        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 card-hover-effect" data-aos="zoom-in" data-aos-delay="400">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3 class="text-base font-bold text-white">නොමිලේ තාක්ෂණික උපදෙස්</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            ඔබේ සැලසුමට අවශ්‍ය අමුද්‍රව්‍ය ප්‍රමාණයන් සහ ගැලපෙන භාණ්ඩ තෝරාගැනීමට නොමිලේ සහය.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customer & Contractor Reviews -->
+  <section class="py-20 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-amber-400 text-xs font-bold uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+          Client Feedback
+        </span>
+        <h2 class="font-display font-bold text-3xl text-white mt-3">
+          පාරිභෝගික සහ කොන්ත්‍රාත්කරුවන්ගේ අදහස්
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+          <div class="flex text-amber-400 gap-1 text-sm mb-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            "මගේ අලුත් ගෙදරට 4" solid blocks 3500ක් ගත්තා. ගල් එකක්වත් කැඩිලා තිබුණේ නෑ. බිත්ති බඳින බාස්ලත් කිව්වා ගල් මට්ටම් කෙලින් තියෙන නිසා වැඩ ලේසියි කියලා. Highly recommended!"
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
+              S
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">සම්පත් පෙරේරා</div>
+              <div class="text-[10px] text-slate-500">Home Builder</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+          <div class="flex text-amber-400 gap-1 text-sm mb-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            "GMS එකෙන් තමයි අපේ site එකට sand සහ metal ගන්නේ. ටිපර් එක වෙලාවට එනවා. කියපු කියුබ් ප්‍රමාණය හරියටම තියෙනවා. Concrete blocks වල ශක්තිය උපරිමයි."
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
+              K
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">කසුන් ධනංජය</div>
+              <div class="text-[10px] text-slate-500">Building Contractor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800">
+          <div class="flex text-amber-400 gap-1 text-sm mb-3">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-xs leading-relaxed">
+            "නියමිත ගණනට බිල්පත් සහ සාධාරණ මිල. Hardware බඩු, සිමෙන්ති සහ යකඩ ඔක්කොම එකම තැනින් ගෙදරටම ගෙන්වා ගන්න ලැබීම ලොකු පහසුවක්."
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-800/80 flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-slate-800 flex items-center justify-center font-bold text-amber-400 text-sm">
+              N
+            </div>
+            <div>
+              <div class="text-xs font-bold text-white">නිමල් විජේසිංහ</div>
+              <div class="text-[10px] text-slate-500">Retail Customer</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact & Location Section -->
+  <section id="contact" class="py-20 bg-slate-950 border-t border-slate-800 relative">
+    <div id="location" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Details -->
+        <div class="lg:col-span-5 space-y-6">
+          <div>
+            <span class="text-amber-400 text-xs font-bold uppercase tracking-widest bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">
+              Get In Touch
+            </span>
+            <h2 class="font-display font-black text-3xl sm:text-4xl text-white mt-3">
+              අප අමතන්න / පැමිණෙන්න
+            </h2>
+            <p class="text-slate-400 text-xs sm:text-sm mt-2">
+              ඔබට අවශ්‍ය ඕනෑම ඉදිකිරීම් අමුද්‍රව්‍යයක් ඇණවුම් කිරීමට හෝ මිල ගණන් දැනගැනීමට අදම කතා කරන්න.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-location-dot text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">ලිපිනය (Store & Yard Location)</h4>
+                <p class="text-xs text-slate-400 mt-1">GMS Hardware and Concrete Works,<br>Main Street, High Level Road, Sri Lanka.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-phone text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">දුරකථන අංක (Hotline & Delivery)</h4>
+                <p class="text-xs text-slate-400 mt-1">
+                  <a href="tel:+94771234567" class="hover:text-amber-400 font-mono font-semibold">+94 77 123 4567</a> / 
+                  <a href="tel:+94719876543" class="hover:text-amber-400 font-mono font-semibold">+94 71 987 6543</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-slate-900 border border-slate-800">
+              <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0">
+                <i class="fa-solid fa-clock text-lg"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-white">විවෘත වේලාවන් (Operating Hours)</h4>
+                <p class="text-xs text-slate-400 mt-1">සඳුදා - ඉරිදා : උදේ 6:30 - රාත්‍රී 8:00 දක්වා<br>(පෝය දිනවලද විවෘතයි)</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40">
+            <div class="flex items-center gap-3">
+              <i class="fa-brands fa-whatsapp text-3xl text-green-400"></i>
+              <div>
+                <div class="text-xs font-bold text-white">ක්ෂණික WhatsApp පණිවිඩයක් එවන්න</div>
+                <div class="text-[11px] text-slate-300">මිල ගණන් ලැයිස්තුවක් තත්පර කිහිපයකින් ලබාගන්න</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Inquiry Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-slate-900 rounded-3xl p-6 sm:p-10 border border-slate-800 shadow-2xl">
+            <h3 class="text-xl font-bold text-white mb-2">ඉදිකිරීම් ද්‍රව්‍ය ඇස්තමේන්තුවක් ලබාගන්න (Request Quote)</h3>
+            <p class="text-xs text-slate-400 mb-6">ඔබට අවශ්‍ය භාණ්ඩ ලැයිස්තුව පහතින් එවන්න. අප කඩිනමින් ඔබව අමතන්නෙමු.</p>
+
+            <form id="inquiryForm" onsubmit="handleInquirySubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5">ඔබේ නම (Full Name) *</label>
+                  <input type="text" id="custName" required placeholder="උදා: කමල් පෙරේරා" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400">
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5">දුරකථන අංකය (Phone Number) *</label>
+                  <input type="tel" id="custPhone" required placeholder="07x xxxxxxx" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400 font-mono">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5">භාණ්ඩ ලබාගත යුතු ප්‍රදේශය (Site Location)</label>
+                  <input type="text" id="custLocation" placeholder="උදා: ගම්පහ / මීගමුව" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400">
+                </div>
+                <div>
+                  <label class="block text-xs font-medium text-slate-300 mb-1.5">අවශ්‍ය ප්‍රධාන භාණ්ඩය (Item Category)</label>
+                  <select id="custItem" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400">
+                    <option value="Concrete Blocks">කොන්ක්‍රීට් ගල් (Concrete Blocks)</option>
+                    <option value="River Sand / Metal">වැලි සහ කළුගල් (Sand / Metal)</option>
+                    <option value="Cement & Steel">සිමෙන්ති සහ යකඩ</option>
+                    <option value="General Hardware">සියලුම Hardware භාණ්ඩ</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-medium text-slate-300 mb-1.5">අවශ්‍ය ප්‍රමාණය සහ වෙනත් විස්තර (Notes / Quantities)</label>
+                <textarea id="custMessage" rows="3" placeholder="උදා: 4' ගල් 2000ක් සහ වැලි ටිපර් එකක් අවශ්‍යයි..." class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400"></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-500 to-orange-500 text-slate-950 font-black text-sm hover:brightness-110 shadow-lg shadow-amber-500/20 transition flex items-center justify-center gap-2">
+                  <i class="fa-solid fa-paper-plane"></i> ඇස්තමේන්තුව ඉල්ලුම් කරන්න (Send via WhatsApp)
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-8 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- About Column -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-black text-lg">
+              <i class="fa-solid fa-trowel-bricks"></i>
+            </div>
+            <span class="font-display font-extrabold text-white text-lg tracking-tight">GMS HARDWARE</span>
+          </div>
+          <p class="leading-relaxed">
+            විශ්වාසනීය ඉදිකිරීම් අමුද්‍රව්‍ය, උසස්ම තත්ත්වයේ කොන්ක්‍රීට් නිෂ්පාදන සහ Hardware භාණ්ඩ ඔබේ භූමියටම ප්‍රවාහනය කරනු ලැබේ.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 pt-1">
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center hover:text-amber-400 hover:bg-slate-800"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center hover:text-amber-400 hover:bg-slate-800"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="w-8 h-8 rounded-lg bg-slate-900 flex items-center justify-center hover:text-amber-400 hover:bg-slate-800"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+
+        <!-- Materials List -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">ද්‍රව්‍ය සහ නිෂ්පාදන</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#concrete" class="hover:text-amber-400 transition">Solid & Hollow Blocks</a></li>
+            <li><a href="#products" class="hover:text-amber-400 transition">පිරිසිදු ගඟ වැලි (River Sand)</a></li>
+            <li><a href="#products" class="hover:text-amber-400 transition">3/4, 1/2 Metal & Quarry Dust</a></li>
+            <li><a href="#products" class="hover:text-amber-400 transition">Tokyo Super & INSEE සිමෙන්ති</a></li>
+            <li><a href="#products" class="hover:text-amber-400 transition">TMT වානේ කම්බි සහ BRC දැල්</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">ක්ෂණික සබැඳි</h4>
+          <ul class="space-y-2.5">
+            <li><a href="#calculator" class="hover:text-amber-400 transition">ගල් අවශ්‍යතා කැල්කියුලේටරය</a></li>
+            <li><a href="#why-us" class="hover:text-amber-400 transition">අපගේ ප්‍රවාහන සේවාව</a></li>
+            <li><a href="#contact" class="hover:text-amber-400 transition">මිල ගණන් විමසීම</a></li>
+            <li><a href="#contact" class="hover:text-amber-400 transition">ගබඩාව පිහිටි ස්ථානය</a></li>
+          </ul>
+        </div>
+
+        <!-- Working Hours & Direct Call -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-4 uppercase tracking-wider">ක්ෂණික ඇමතුම්</h4>
+          <p class="leading-relaxed mb-3">අදම ඔබගේ ඉදිකිරීම සඳහා අවශ්‍ය ඇස්තමේන්තුව නොමිලේ ලබාගන්න.</p>
+          <a href="tel:+94771234567" class="inline-block px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-amber-400 font-bold hover:bg-slate-800 transition">
+            <i class="fa-solid fa-phone-flip mr-2"></i> +94 77 123 4567
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p>© 2026 GMS Hardware and Concrete Works. All Rights Reserved.</p>
+        <p class="text-slate-500">Quality Materials & Concrete Solutions.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Quick Quote Modal -->
+  <div id="quoteModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+    <div class="bg-slate-900 rounded-3xl max-w-lg w-full border border-slate-800 p-6 sm:p-8 relative shadow-2xl">
+      <button onclick="closeQuoteModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold">
+          <i class="fa-solid fa-file-invoice"></i>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-white" id="modalTitle">ක්ෂණික මිල ගණන් විමසීම</h3>
+          <p class="text-xs text-slate-400">ඔබගේ විස්තර ඇතුළත් කර WhatsApp මඟින් එවන්න</p>
+        </div>
+      </div>
+
+      <div class="space-y-3.5">
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">තෝරාගත් භාණ්ඩය (Item)</label>
+          <input type="text" id="modalItem" readonly class="w-full bg-slate-950 border border-slate-800 rounded-xl px-3.5 py-2 text-xs sm:text-sm text-amber-400 font-semibold focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">අවශ්‍ය ප්‍රමාණය (Quantity / Units / Cubes)</label>
+          <input type="text" id="modalQty" placeholder="උදා: 1500 Blocks හෝ 2 Cubes" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">ඔබේ නම (Name)</label>
+          <input type="text" id="modalName" placeholder="නම ඇතුළත් කරන්න" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+        <div>
+          <label class="block text-xs text-slate-300 font-semibold mb-1">ගෙනැවිත් දිය යුතු නගරය/ප්‍රදේශය (Delivery City)</label>
+          <input type="text" id="modalCity" placeholder="උදා: හෝමාගම / පාදුක්ක" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-3.5 py-2 text-xs sm:text-sm text-white focus:outline-none focus:border-amber-400">
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center gap-3">
+        <button onclick="closeQuoteModal()" class="w-1/3 py-2.5 rounded-xl border border-slate-700 text-slate-300 font-semibold text-xs hover:bg-slate-800">
+          Cancel
+        </button>
+        <button onclick="submitModalOrder()" class="w-2/3 py-2.5 rounded-xl bg-gradient-to-r from-emerald-600 to-green-500 text-white font-bold text-xs sm:text-sm hover:brightness-110 flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp එකට යවන්න
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Notification Toast Box -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 bg-slate-900 border border-amber-500/40 text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3">
+    <i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>
+    <div>
+      <h4 class="text-xs font-bold text-white" id="toastTitle">Success</h4>
+      <p class="text-[11px] text-slate-300" id="toastMessage">Action completed successfully!</p>
+    </div>
+  </div>
+
+  <!-- Floating Fast Action WhatsApp Button -->
+  <a href="https://wa.me/94771234567?text=GMS%20Hardware%20Inquiry" target="_blank" class="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-gradient-to-tr from-green-600 to-emerald-400 text-white flex items-center justify-center text-2xl shadow-2xl shadow-green-500/30 hover:scale-110 transition-transform">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- AOS Animation Scripts CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    // Initialize AOS animations
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80
+      });
+
+      // Run initial calculation
+      calculateEstimate();
+
+      // Mobile Menu Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      if (mobileBtn && mobileDrawer) {
+        mobileBtn.addEventListener('click', () => {
+          mobileDrawer.classList.toggle('hidden');
+        });
+      }
+    });
+
+    // Product Filter Functionality
+    function filterProducts(category) {
+      const buttons = document.querySelectorAll('.category-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-amber-500', 'text-slate-950', 'shadow-md');
+        btn.classList.add('bg-slate-800', 'text-slate-300');
+      });
+
+      event.currentTarget.classList.remove('bg-slate-800', 'text-slate-300');
+      event.currentTarget.classList.add('bg-amber-500', 'text-slate-950', 'shadow-md');
+
+      const items = document.querySelectorAll('.product-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    // Interactive Wall Estimator Calculation
+    function calculateEstimate() {
+      const length = parseFloat(document.getElementById('calcLength').value) || 0;
+      const height = parseFloat(document.getElementById('calcHeight').value) || 0;
+      const deduction = parseFloat(document.getElementById('calcDeduction').value) || 0;
+      const typeSelect = document.getElementById('calcType');
+      const unitPrice = parseFloat(typeSelect.options[typeSelect.selectedIndex].getAttribute('data-price')) || 85;
+
+      const rawArea = length * height;
+      const netArea = Math.max(0, rawArea - deduction);
+
+      // Standard block dimensions (16" length x 8" height face = 1.33 ft x 0.67 ft = 0.89 sq.ft per block)
+      // Approximately 1.125 blocks per sq.ft of wall face
+      // Adding 5% buffer for cuts, mortar wastage, corners
+      const blocksNeeded = Math.ceil(netArea * 1.125 * 1.05);
+      const totalCost = blocksNeeded * unitPrice;
+
+      // Update UI
+      document.getElementById('resArea').innerHTML = `${netArea.toLocaleString()} <span class="text-sm font-normal text-slate-400">Sq.Ft (වර්ග අඩි)</span>`;
+      document.getElementById('resBlocks').innerHTML = `${blocksNeeded.toLocaleString()} <span class="text-base font-normal text-slate-300">ගල් (Units)</span>`;
+      document.getElementById('resCost').innerText = `Rs. ${totalCost.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    }
+
+    // Send calculated estimate directly to WhatsApp
+    function sendCalculatedQuote() {
+      const length = document.getElementById('calcLength').value;
+      const height = document.getElementById('calcHeight').value;
+      const netArea = document.getElementById('resArea').innerText;
+      const blocks = document.getElementById('resBlocks').innerText;
+      const cost = document.getElementById('resCost').innerText;
+      const type = document.getElementById('calcType').options[document.getElementById('calcType').selectedIndex].text;
+
+      const message = `*GMS Hardware & Concrete Works Quote Request*\n` +
+                      `------------------------------------\n` +
+                      `Wall Dimensions: ${length}ft Length x ${height}ft Height\n` +
+                      `Total Net Area: ${netArea}\n` +
+                      `Selected Material: ${type}\n` +
+                      `Estimated Blocks: ${blocks}\n` +
+                      `Estimated Block Cost: ${cost}\n\n` +
+                      `Please let me know transport charges and availability. Thank you!`;
+
+      const encodedMsg = encodeURIComponent(message);
+      window.open(`https://wa.me/94771234567?text=${encodedMsg}`, '_blank');
+    }
+
+    // Modal Control Functions
+    function openQuoteModal(itemName) {
+      const modal = document.getElementById('quoteModal');
+      const itemInput = document.getElementById('modalItem');
+      itemInput.value = itemName || 'General Building Materials & Concrete Blocks';
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeQuoteModal() {
+      const modal = document.getElementById('quoteModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function quickOrder(itemName) {
+      openQuoteModal(itemName);
+    }
+
+    function submitModalOrder() {
+      const item = document.getElementById('modalItem').value;
+      const qty = document.getElementById('modalQty').value || '1';
+      const name = document.getElementById('modalName').value || 'Customer';
+      const city = document.getElementById('modalCity').value || 'Local Area';
+
+      const text = `*New Order Inquiry - GMS Hardware*\n` +
+                   `Customer Name: ${name}\n` +
+                   `Item: ${item}\n` +
+                   `Quantity: ${qty}\n` +
+                   `Delivery City: ${city}\n` +
+                   `Please provide price and delivery timeline.`;
+
+      closeQuoteModal();
+      showToast("Order Prepared", "Opening WhatsApp with your request...");
+      
+      setTimeout(() => {
+        window.open(`https://wa.me/94771234567?text=${encodeURIComponent(text)}`, '_blank');
+      }, 700);
+    }
+
+    // Inquiry Form Handler
+    function handleInquirySubmit(event) {
+      event.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const location = document.getElementById('custLocation').value;
+      const item = document.getElementById('custItem').value;
+      const message = document.getElementById('custMessage').value;
+
+      const fullText = `*Inquiry from GMS Website*\n` +
+                       `Name: ${name}\n` +
+                       `Phone: ${phone}\n` +
+                       `Location: ${location}\n` +
+                       `Interested in: ${item}\n` +
+                       `Details: ${message}`;
+
+      showToast("Request Sent", "Connecting to GMS Hardware WhatsApp desk...");
+      setTimeout(() => {
+        window.open(`https://wa.me/94771234567?text=${encodeURIComponent(fullText)}`, '_blank');
+      }, 600);
+    }
+
+    // Custom Toast Notification System
+    function showToast(title, message) {
+      const toast = document.getElementById('toastNotification');
+      document.getElementById('toastTitle').innerText = title;
+      document.getElementById('toastMessage').innerText = message;
+
+      toast.classList.remove('translate-y-32', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.remove('translate-y-0', 'opacity-100');
+        toast.classList.add('translate-y-32', 'opacity-0');
+      }, 4000);
+    }
+  </script>
+</body>
+</html>
